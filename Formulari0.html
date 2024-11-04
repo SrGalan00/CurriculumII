@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body style="background-color: pink ;">
+    <a href="index.html">volver</a>
+    <h2>Formulario de Currículum</h2>
+    <form action="proceso.php" method="post">
+        <fieldset> 
+            <legend> <b> Datos personales </b>  </legend>
+            <p> Nombre <input type="text" name="nombre">
+            <p> Apellidos <input type="text" name="Apellidos"></p> 
+            <p> Edad <input  type="number" name="Edad" size="3"></p>
+            <p>Género:</p>
+            <p>
+                <input type="radio" name="sexo" value="h"> Hombre
+                <input type="radio" name="sexo" value="m"> Mujer
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> Contacto </legend>
+            Correo Electrónico: <input type="text" name="correo"> <br> <br>
+            Código Postal: <input type="number" name="CP" > <br> <br>
+            Dirección: <input type="text" name="Calle"> <br> <br>
+            Ciudad: <select name="Ciudad" id="ciudad">
+                        <option value="Jaén"> Jaén</option>
+                        <option value="Córdoba"> Córdoba</option>
+                        <option value="Málaga" selected> Málaga</option>
+                        <option value="Huelva"> Huelva</option>
+                        <option value="Sevilla"> Huelva</option>
+                        <option value="Almeria"> Almeria</option>
+                    </select> <br> <br>
+            Contraseña: <input type="password" name="contrasena" size="6">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Interés</legend>
+            <p>
+                Estado Civil: 
+                <input type="radio" name="estadi" value="C"> Casado
+                <input type="radio" name="estado" value="NC"> No casado
+            </p>
+            <p>
+                Hobbies: <br>
+                Deporte <input type="checkbox" name="hobbies" value="Deporte">
+                Cine <input type="checkbox" name="hobbies" value="cine">
+                Lectura <input type="checkbox" name="hobbies" value="lecutura">
+                Correr <input type="checkbox" name="hobbies" value="correr">
+            </p>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios Adicionales</legend>
+            Escribe aquí tus comentarios <br>
+            <textarea name="comentarios" id="comentarios" placeholder="Escribe aqui tus comentarios" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </form>
+    
+
+</body>
+</html>
